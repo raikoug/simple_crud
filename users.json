@@ -1,0 +1,18 @@
+{
+    "admin@acme.local" :   {
+        "username":"admin",
+        "password":"pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+        "role":"admin",
+        "email":"admin@acme.local",
+        "firstName":"Admin",
+        "lastName":"User"
+    },
+    "user@acme.local":  {
+            "username":"user",
+            "password":"pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+            "role":"user",
+            "email":"user@acme.local",	
+            "firstName":"Normal",
+            "lastName":"User"
+        }
+}
