@@ -56,6 +56,7 @@ except ImportError:  # Graceful fallback if IceCream isn't installed.
 app = Flask(__name__)
 
 ALLOWED_METHODS=['GET', 'POST', 'PUT', 'DELETE']
+NOT_ALLOWED_METHODS=['OPTIONS', 'PATCH', 'HEAD']
 
 
 def verify_password(function):
@@ -83,6 +84,20 @@ def verify_password(function):
 
 
 # Path: /
+@app.route('/', methods=NOT_ALLOWED_METHODS, endpoint='default')
+def default():
+    #method not implemented
+    return method_not_allowed()
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return resource_not_found()
+
+@app.route('/about', methods=["GET"], endpoint='about')
+def about():
+    return resource_not_found()
+
+
 @app.route('/', methods=["GET"], endpoint='get')
 @verify_password
 def get():
@@ -170,6 +185,8 @@ def delete():
     
     
     return delete_user(email_to_delete, requesting_user)
+
+
 
 def edit_user(user_to_edit: User, requesting_user: User):
     users_in_db = json.loads(open('users.json').read())
@@ -314,3 +331,9 @@ def body_is_not_valid_users():
 
 def forbidden_resource():
     return jsonify({'error': 'Forbidden resource'}), 403
+
+def method_not_allowed():
+    return jsonify({'error': 'Method not implemented for the resource'}), 405
+
+def resource_not_found():
+    return jsonify({'error': 'The resource cannot be found'}), 404
