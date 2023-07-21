@@ -196,5 +196,14 @@
     "firstName": "Rachel",
     "lastName": "White",
     "unit": "Storage"
+  },
+  "storage_user21@acme.local": {
+    "username": "storage_user21",
+    "password": "pbkdf2:sha256:260000$avWqhc1nLtE2fl2L$5b0e4c38e1b8f838c0f284b85c5dad03863bba12765c5c95210ea8eaa70ce952",
+    "role": "user",
+    "email": "storage_user21@acme.local",
+    "firstName": "Lori",
+    "lastName": "Smith",
+    "unit": "Storage"
   }
 }

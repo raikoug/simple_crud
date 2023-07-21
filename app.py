@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, Response
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -61,8 +61,15 @@ ALLOWED_METHODS=['GET', 'POST', 'PUT', 'DELETE']
 def verify_password(function):
     def my_auth_wrapper(*args, **kwargs):
         users = get_users()
-        username = request.authorization['username']
-        password_provided = request.authorization['password']
+        try:
+            username = request.authorization['username']
+            password_provided = request.authorization['password']
+        except:
+            return Response(
+        'Could not verify your access level for that URL.\n'
+        'You have to login with proper credentials', 401,
+        {'WWW-Authenticate': 'Basic realm="Login Required"'}
+    )
         if not username in users:
             return username_or_password_are_invalid()
         
