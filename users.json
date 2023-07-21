@@ -1,18 +1,200 @@
 {
-    "admin@acme.local" :   {
-        "username":"admin",
-        "password":"pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
-        "role":"admin",
-        "email":"admin@acme.local",
-        "firstName":"Admin",
-        "lastName":"User"
-    },
-    "user@acme.local":  {
-            "username":"user",
-            "password":"pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
-            "role":"user",
-            "email":"user@acme.local",	
-            "firstName":"Normal",
-            "lastName":"User"
-        }
+  "admin@acme.local": {
+    "username": "admin",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "admin",
+    "email": "admin@acme.local",
+    "firstName": "Nicole",
+    "lastName": "Henry",
+    "unit": "all"
+  },
+  "marketing_admin@acme.local": {
+    "username": "marketing_admin",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "manager",
+    "email": "marketing_admin@acme.local",
+    "firstName": "Paul",
+    "lastName": "Bell",
+    "unit": "Marketing"
+  },
+  "storage_admin@acme.local": {
+    "username": "storage_admin",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "manager",
+    "email": "storage_admin@acme.local",
+    "firstName": "Kimberly",
+    "lastName": "Price",
+    "unit": "Storage"
+  },
+  "marketing_user1@acme.local": {
+    "username": "marketing_user1",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user1@acme.local",
+    "firstName": "Melissa",
+    "lastName": "Barnett",
+    "unit": "Marketing"
+  },
+  "storage_user1@acme.local": {
+    "username": "storage_user1",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user1@acme.local",
+    "firstName": "Shelly",
+    "lastName": "Nelson",
+    "unit": "Storage"
+  },
+  "marketing_user2@acme.local": {
+    "username": "marketing_user2",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user2@acme.local",
+    "firstName": "David",
+    "lastName": "Mack",
+    "unit": "Marketing"
+  },
+  "marketing_user3@acme.local": {
+    "username": "marketing_user3",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user3@acme.local",
+    "firstName": "Jeffrey",
+    "lastName": "Richard",
+    "unit": "Marketing"
+  },
+  "marketing_user4@acme.local": {
+    "username": "marketing_user4",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user4@acme.local",
+    "firstName": "Kevin",
+    "lastName": "Edwards",
+    "unit": "Marketing"
+  },
+  "marketing_user5@acme.local": {
+    "username": "marketing_user5",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user5@acme.local",
+    "firstName": "Amy",
+    "lastName": "Barnett",
+    "unit": "Marketing"
+  },
+  "marketing_user6@acme.local": {
+    "username": "marketing_user6",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user6@acme.local",
+    "firstName": "Lucas",
+    "lastName": "Trujillo",
+    "unit": "Marketing"
+  },
+  "marketing_user7@acme.local": {
+    "username": "marketing_user7",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user7@acme.local",
+    "firstName": "Jorge",
+    "lastName": "Jenkins",
+    "unit": "Marketing"
+  },
+  "marketing_user8@acme.local": {
+    "username": "marketing_user8",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user8@acme.local",
+    "firstName": "Karen",
+    "lastName": "Newman",
+    "unit": "Marketing"
+  },
+  "marketing_user9@acme.local": {
+    "username": "marketing_user9",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "marketing_user9@acme.local",
+    "firstName": "David",
+    "lastName": "Bryant",
+    "unit": "Marketing"
+  },
+  "storage_user2@acme.local": {
+    "username": "storage_user12",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user2@acme.local",
+    "firstName": "Brian",
+    "lastName": "Morris",
+    "unit": "Storage"
+  },
+  "storage_user3@acme.local": {
+    "username": "storage_user13",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user3@acme.local",
+    "firstName": "Connie",
+    "lastName": "Lutz",
+    "unit": "Storage"
+  },
+  "storage_user4@acme.local": {
+    "username": "storage_user14",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user4@acme.local",
+    "firstName": "Katherine",
+    "lastName": "Graham",
+    "unit": "Storage"
+  },
+  "storage_user5@acme.local": {
+    "username": "storage_user15",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user5@acme.local",
+    "firstName": "Gabriel",
+    "lastName": "Kennedy",
+    "unit": "Storage"
+  },
+  "storage_user6@acme.local": {
+    "username": "storage_user16",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user6@acme.local",
+    "firstName": "Victor",
+    "lastName": "King",
+    "unit": "Storage"
+  },
+  "storage_user7@acme.local": {
+    "username": "storage_user17",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user7@acme.local",
+    "firstName": "Bryan",
+    "lastName": "Guzman",
+    "unit": "Storage"
+  },
+  "storage_user8@acme.local": {
+    "username": "storage_user18",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user8@acme.local",
+    "firstName": "Rita",
+    "lastName": "Huff",
+    "unit": "Storage"
+  },
+  "storage_user9@acme.local": {
+    "username": "storage_user19",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user9@acme.local",
+    "firstName": "Manuel",
+    "lastName": "Griffin",
+    "unit": "Storage"
+  },
+  "storage_user10@acme.local": {
+    "username": "storage_user110",
+    "password": "pbkdf2:sha256:260000$vLV4Zmtol4PnizTc$51350ce0fe061e7b66a5dada7ec8796ab7d4f2ca72eddd19745195df1f2f6044",
+    "role": "user",
+    "email": "storage_user10@acme.local",
+    "firstName": "Rachel",
+    "lastName": "White",
+    "unit": "Storage"
+  }
 }
